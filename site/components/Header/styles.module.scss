@@ -1,0 +1,32 @@
+.header {
+  padding: 20px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  &Title{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #fff;   
+    cursor: pointer;
+
+    @media(min-width: 701px){
+      font-size: 36px;
+    }
+  }
+
+  &Links {
+    a {
+      color: #fff;
+    }
+  }
+}
