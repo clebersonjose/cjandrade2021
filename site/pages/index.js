@@ -1,18 +1,18 @@
-import Head from 'next/head';
-import Header from '../components/Header';
-import FeedPosts from '../components/FeedPosts';
-import Footer from '../components/Footer';
-import styles from '../styles/Home.module.scss';
+import Head from "next/head";
+import Link from "next/link";
+
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.homePage}>
+    <div>
       <Head>
-        <title>CJ Andrade / Blog</title>
+        <title>CJ Andrade</title>
       </Head>
-      <Header />
+      <Header title="CJ Andrade" />
       <main>
-        <FeedPosts />
+        <Link href="/blog/1">Blog</Link>
       </main>
       <Footer />
     </div>

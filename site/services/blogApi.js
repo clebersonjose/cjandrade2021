@@ -1,10 +1,10 @@
-import axios from 'axios';
+import axios from "axios";
 
 export const blogApi = axios.create({
   baseURL: process.env.NEXT_PUBLIC_GRAPHCMS_API_URL,
 });
 
-export function GET_POSTS_FEED(itemPerPage = 4, skip = 0) { 
+export function GET_POSTS_FEED(itemPerPage = 4, skip = 0) {
   return `
   {
     posts(stage: PUBLISHED, orderBy: publishedAt_DESC, first: ${itemPerPage}, skip: ${skip}) {
@@ -18,17 +18,19 @@ export function GET_POSTS_FEED(itemPerPage = 4, skip = 0) {
       }
     }
   }
-`};
+`;
+}
 
 export const GET_POSTS_FEED_TOTAL = `
   {
     posts {
       id
+      slug
     }
   }
 `;
 
-export function GET_POST(slug) { 
+export function GET_POST(slug) {
   return `
   {
     post(where: {slug: "${slug}"}) {
@@ -42,4 +44,5 @@ export function GET_POST(slug) {
       }
     }
   }
-`}
+`;
+}

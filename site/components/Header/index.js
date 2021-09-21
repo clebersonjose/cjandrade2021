@@ -3,11 +3,11 @@ import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 import styles from './styles.module.scss';
 
-export default function Header(){
+export default function Header(props){
   return (
     <header className={styles.header}>
       <Link href="/">
-        <h1 className={styles.headerTitle}>CJ Andrade / Blog</h1>
+        <h1 className={styles.headerTitle}>{props.title}</h1>
       </Link>
 
       <div className={styles.headerLinks}>
