@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import FeedPosts from "../../components/FeedPosts";
 
-import styles from "../../styles/Blog.module.scss";
+import styles from "./styles.module.scss";
 import {
   blogApi,
   GET_POSTS_FEED,

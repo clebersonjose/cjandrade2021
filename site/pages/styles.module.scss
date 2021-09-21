@@ -1,0 +1,92 @@
+.home {
+  display: grid;
+  grid-template-rows: max-content auto max-content;
+  min-height: 100vh;
+
+  &Page {
+    display: grid;
+    grid-template-rows: auto max-content;
+    padding: 20px 20px 0;
+    max-width: 570px;
+    margin: 0 auto;
+
+    @media (min-width: 701px) {
+      grid-template-rows: repeat(2, max-content);
+      align-self: center;
+    }
+
+    &Content {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      &Img {
+        width: 175px;
+        height: 175px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      &Title {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #000;
+      }
+
+      &Text {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #000000;
+      }
+
+      &Contato {
+        padding: 10px 40px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        background: #635495;
+      }
+
+      &Redes {
+        a {
+          color: #000;
+        }
+      }
+    }
+
+    &Blog {
+      justify-self: end;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #000;
+        text-decoration: none;
+        gap: 5px;
+
+        p {
+          font-family: Quicksand;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}

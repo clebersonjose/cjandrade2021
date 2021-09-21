@@ -7,12 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-import styles from "../../styles/Post.module.scss";
 import {
   blogApi,
   GET_POST,
   GET_POSTS_FEED_TOTAL,
 } from "../../services/blogApi";
+
+import styles from "./styles.module.scss";
 
 export default function Post({ post }) {
   const router = useRouter();

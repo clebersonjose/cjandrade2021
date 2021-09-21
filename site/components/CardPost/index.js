@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from './styles.module.scss';
+import Link from "next/link";
+import styles from "./styles.module.scss";
 
 export default function CardPost(props) {
   return (
@@ -9,7 +9,7 @@ export default function CardPost(props) {
 
         <div className={styles.cardPostContent}>
           <h3 className={styles.cardPostTitle}>{props.title}</h3>
-          
+
           <p className={styles.cardPostExcerpt}>{props.excerpt}</p>
         </div>
       </article>
