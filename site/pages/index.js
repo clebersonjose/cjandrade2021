@@ -32,9 +32,7 @@ export default function Home() {
           </h2>
 
           <p className={styles.homePageContentText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque odio libero, hendrerit auctor nibh eu, luctus convallis
-            mauris. Vestibulum interdum urna a.
+            Sou apaixonado por programação, area em que atuo focando na solução de problemas de cliente e usuarios. Atualmente PHP e JavaScript são minhas principais ferramentas de trabalho.
           </p>
 
           <a
