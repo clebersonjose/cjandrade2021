@@ -10,16 +10,16 @@
     text-decoration: none;
   }
 
-  &Title{
+  &Title {
     font-family: Quicksand;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 150%;
-    color: #fff;   
+    color: #fff;
     cursor: pointer;
 
-    @media(min-width: 701px){
+    @media (min-width: 701px) {
       font-size: 36px;
     }
   }
