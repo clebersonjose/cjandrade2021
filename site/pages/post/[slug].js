@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import HeadMeta from "../../components/HeadMeta";
 
 import {
   blogApi,
@@ -22,6 +23,7 @@ export default function Post({ post }) {
     <div className={styles.postPage}>
       <Head>
         <title>{post.title}</title>
+        <HeadMeta />
       </Head>
 
       <Header title="CJ Andrade / Blog" />
