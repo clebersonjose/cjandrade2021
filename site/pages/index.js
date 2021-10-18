@@ -9,12 +9,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import styles from "./styles.module.scss";
+import HeadMeta from "../components/HeadMeta";
 
 export default function Home() {
   return (
     <div className={styles.home}>
       <Head>
         <title>CJ Andrade</title>
+        <HeadMeta />
       </Head>
 
       <Header title="CJ Andrade" />
