@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import FeedPosts from "../../components/FeedPosts";
+import HeadMeta from "../../components/HeadMeta";
 
 import styles from "./styles.module.scss";
 import {
@@ -16,8 +17,11 @@ export default function Blog({ page, totalItems, posts, itemsPerPage }) {
     <div className={styles.blogPage}>
       <Head>
         <title>CJ Andrade / Blog</title>
+        <HeadMeta />
       </Head>
+
       <Header title="CJ Andrade / Blog" />
+
       <main>
         <FeedPosts
           isPage={page}
